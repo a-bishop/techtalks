@@ -1,4 +1,5 @@
 import Ecto.Query
+
 alias TechTalks.Repo
 alias TechTalks.Accounts
 alias TechTalks.Accounts.User
