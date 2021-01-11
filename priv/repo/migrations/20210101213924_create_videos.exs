@@ -1,4 +1,4 @@
-defmodule TechTalks.Repo.Migrations.CreateVideos do
+defmodule Techtalks.Repo.Migrations.CreateVideos do
   use Ecto.Migration
 
   def change do

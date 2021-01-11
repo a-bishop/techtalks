@@ -1,4 +1,4 @@
-defmodule TechTalks.Repo.Migrations.CreateUsers do
+defmodule Techtalks.Repo.Migrations.CreateUsers do
   use Ecto.Migration
 
   def change do

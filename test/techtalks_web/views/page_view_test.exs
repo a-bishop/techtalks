@@ -1,3 +1,3 @@
-defmodule TechTalksWeb.PageViewTest do
-  use TechTalksWeb.ConnCase, async: true
+defmodule TechtalksWeb.PageViewTest do
+  use TechtalksWeb.ConnCase, async: true
 end

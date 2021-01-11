@@ -5,13 +5,13 @@
 # Inside the script, you can read and write to any of your
 # repositories directly:
 #
-#     TechTalks.Repo.insert!(%TechTalks.SomeSchema{})
+#     Techtalks.Repo.insert!(%Techtalks.SomeSchema{})
 #
 # We recommend using the bang functions (`insert!`, `update!`
 # and so on) as they will fail if something goes wrong.
 
-alias TechTalks.Multimedia
-alias TechTalks.Accounts
+alias Techtalks.Multimedia
+alias Techtalks.Accounts
 
 for category <- [
       "Tutorial",

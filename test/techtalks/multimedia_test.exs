@@ -1,7 +1,7 @@
-defmodule TechTalks.MultimediaTest do
-  use TechTalks.DataCase, async: true
-  alias TechTalks.Multimedia
-  alias TechTalks.Multimedia.Category
+defmodule Techtalks.MultimediaTest do
+  use Techtalks.DataCase, async: true
+  alias Techtalks.Multimedia
+  alias Techtalks.Multimedia.Category
 
   describe "categories" do
     test "list_alphabetical_categories/0" do
@@ -20,7 +20,7 @@ defmodule TechTalks.MultimediaTest do
   end
 
   describe "videos" do
-    alias TechTalks.Multimedia.Video
+    alias Techtalks.Multimedia.Video
 
     @valid_attrs %{description: "desc", title: "title", url: "http://local"}
     @invalid_attrs %{description: nil, title: nil, url: nil}

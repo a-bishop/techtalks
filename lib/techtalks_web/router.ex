@@ -1,5 +1,5 @@
-defmodule TechTalksWeb.Router do
-  use TechTalksWeb, :router
+defmodule TechtalksWeb.Router do
+  use TechtalksWeb, :router
 
   pipeline :browser do
     plug :accepts, ["html"]
@@ -7,14 +7,14 @@ defmodule TechTalksWeb.Router do
     plug :fetch_flash
     plug :protect_from_forgery
     plug :put_secure_browser_headers
-    plug TechTalksWeb.Auth
+    plug TechtalksWeb.Auth
   end
 
   pipeline :api do
     plug :accepts, ["json"]
   end
 
-  scope "/", TechTalksWeb do
+  scope "/", TechtalksWeb do
     pipe_through :browser
 
     get "/", PageController, :index
@@ -23,13 +23,13 @@ defmodule TechTalksWeb.Router do
     get "/watch/:id", WatchController, :show
   end
 
-  scope "/manage", TechTalksWeb do
+  scope "/manage", TechtalksWeb do
     pipe_through [:browser, :authenticate_user]
     resources "/videos", VideoController
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", TechTalksWeb do
+  # scope "/api", TechtalksWeb do
   #   pipe_through :api
   # end
 
@@ -45,7 +45,7 @@ defmodule TechTalksWeb.Router do
 
     scope "/" do
       pipe_through :browser
-      live_dashboard "/dashboard", metrics: TechTalksWeb.Telemetry
+      live_dashboard "/dashboard", metrics: TechtalksWeb.Telemetry
     end
   end
 end

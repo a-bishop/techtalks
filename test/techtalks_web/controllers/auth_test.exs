@@ -1,12 +1,12 @@
-defmodule TechTalksWeb.AuthTest do
-  use TechTalksWeb.ConnCase, async: true
-  alias TechTalksWeb.Auth
-  import TechTalks.TestHelpers
+defmodule TechtalksWeb.AuthTest do
+  use TechtalksWeb.ConnCase, async: true
+  alias TechtalksWeb.Auth
+  import Techtalks.TestHelpers
 
   setup %{conn: conn} do
     conn =
       conn
-      |> bypass_through(TechTalksWeb.Router, :browser)
+      |> bypass_through(TechtalksWeb.Router, :browser)
       |> get("/")
 
     {:ok, %{conn: conn}}
@@ -22,7 +22,7 @@ defmodule TechTalksWeb.AuthTest do
        %{conn: conn} do
     conn =
       conn
-      |> assign(:current_user, %TechTalks.Accounts.User{})
+      |> assign(:current_user, %Techtalks.Accounts.User{})
       |> Auth.authenticate_user([])
 
     refute conn.halted
@@ -31,7 +31,7 @@ defmodule TechTalksWeb.AuthTest do
   test "login puts the user in the session", %{conn: conn} do
     login_conn =
       conn
-      |> Auth.login(%TechTalks.Accounts.User{id: 123})
+      |> Auth.login(%Techtalks.Accounts.User{id: 123})
       |> send_resp(:ok, "")
 
     next_conn = get(login_conn, "/")

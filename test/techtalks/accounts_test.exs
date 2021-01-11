@@ -1,8 +1,8 @@
-defmodule TechTalks.AccountsTest do
-  use TechTalks.DataCase, async: true
+defmodule Techtalks.AccountsTest do
+  use Techtalks.DataCase, async: true
 
-  alias TechTalks.Accounts
-  alias TechTalks.Accounts.User
+  alias Techtalks.Accounts
+  alias Techtalks.Accounts.User
 
   describe "register_user/1" do
     @valid_attrs %{

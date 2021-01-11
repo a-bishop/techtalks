@@ -1,5 +1,5 @@
-defmodule TechTalksWeb.SessionController do
-  use TechTalksWeb, :controller
+defmodule TechtalksWeb.SessionController do
+  use TechtalksWeb, :controller
 
   def new(conn, _) do
     render(conn, "new.html")
@@ -9,10 +9,10 @@ defmodule TechTalksWeb.SessionController do
         conn,
         %{"session" => %{"username" => username, "password" => pass}}
       ) do
-    case TechTalks.Accounts.authenticate_by_username_and_pass(username, pass) do
+    case Techtalks.Accounts.authenticate_by_username_and_pass(username, pass) do
       {:ok, user} ->
         conn
-        |> TechTalksWeb.Auth.login(user)
+        |> TechtalksWeb.Auth.login(user)
         |> put_flash(:info, "Welcome back!")
         |> redirect(to: Routes.page_path(conn, :index))
 
@@ -25,7 +25,7 @@ defmodule TechTalksWeb.SessionController do
 
   def delete(conn, _) do
     conn
-    |> TechTalksWeb.Auth.logout()
+    |> TechtalksWeb.Auth.logout()
     |> redirect(to: Routes.page_path(conn, :index))
   end
 end

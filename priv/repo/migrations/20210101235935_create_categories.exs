@@ -1,4 +1,4 @@
-defmodule TechTalks.Repo.Migrations.CreateCategories do
+defmodule Techtalks.Repo.Migrations.CreateCategories do
   use Ecto.Migration
 
   def change do

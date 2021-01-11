@@ -1,8 +1,8 @@
 import Ecto.Query
 
-alias TechTalks.Repo
-alias TechTalks.Accounts
-alias TechTalks.Accounts.User
-alias TechTalks.Multimedia
-alias TechTalks.Multimedia.Video
-alias TechTalks.Multimedia.Category
+alias Techtalks.Repo
+alias Techtalks.Accounts
+alias Techtalks.Accounts.User
+alias Techtalks.Multimedia
+alias Techtalks.Multimedia.Video
+alias Techtalks.Multimedia.Category

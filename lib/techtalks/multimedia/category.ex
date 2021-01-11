@@ -1,4 +1,4 @@
-defmodule TechTalks.Multimedia.Category do
+defmodule Techtalks.Multimedia.Category do
   use Ecto.Schema
   import Ecto.Changeset
   import Ecto.Query

@@ -1,7 +1,7 @@
-defmodule TechTalksWeb.UserController do
-  use TechTalksWeb, :controller
-  alias TechTalks.Accounts
-  alias TechTalks.Accounts.User
+defmodule TechtalksWeb.UserController do
+  use TechtalksWeb, :controller
+  alias Techtalks.Accounts
+  alias Techtalks.Accounts.User
   plug :authenticate_user when action in [:index, :show]
 
   def new(conn, _params) do
@@ -23,7 +23,7 @@ defmodule TechTalksWeb.UserController do
     case Accounts.register_user(user_params) do
       {:ok, user} ->
         conn
-        |> TechTalksWeb.Auth.login(user)
+        |> TechtalksWeb.Auth.login(user)
         |> put_flash(:info, "#{user.name} created!")
         |> redirect(to: Routes.user_path(conn, :index))
 

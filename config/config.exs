@@ -8,14 +8,14 @@
 use Mix.Config
 
 config :techtalks,
-  ecto_repos: [TechTalks.Repo]
+  ecto_repos: [Techtalks.Repo]
 
 # Configures the endpoint
-config :techtalks, TechTalksWeb.Endpoint,
+config :techtalks, TechtalksWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "7zkz0w6Wdkb+pCeb/dcZiNBDGGhwtC9o5ClvwOplkaGKJnLYV8AdpsiLxHYt7yGs",
-  render_errors: [view: TechTalksWeb.ErrorView, accepts: ~w(html json), layout: false],
-  pubsub_server: TechTalks.PubSub,
+  render_errors: [view: TechtalksWeb.ErrorView, accepts: ~w(html json), layout: false],
+  pubsub_server: Techtalks.PubSub,
   live_view: [signing_salt: "ZapA9fsV"]
 
 # Configures Elixir's Logger

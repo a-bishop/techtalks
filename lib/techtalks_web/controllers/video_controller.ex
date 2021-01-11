@@ -1,8 +1,8 @@
-defmodule TechTalksWeb.VideoController do
-  use TechTalksWeb, :controller
+defmodule TechtalksWeb.VideoController do
+  use TechtalksWeb, :controller
 
-  alias TechTalks.Multimedia
-  alias TechTalks.Multimedia.Video
+  alias Techtalks.Multimedia
+  alias Techtalks.Multimedia.Video
 
   plug :load_categories when action in [:new, :create, :edit, :update]
 

@@ -1,10 +1,11 @@
-defmodule TechTalks.Accounts do
+defmodule Techtalks.Accounts do
   @moduledoc """
   The Accounts context.
   """
 
-  alias TechTalks.Repo
-  alias TechTalks.Accounts.User
+  alias Techtalks.Repo
+  alias Techtalks.Accounts.User
+  import Ecto.Query
 
   def get_user(id) do
     Repo.get(User, id)
@@ -30,6 +31,10 @@ defmodule TechTalks.Accounts do
     %User{}
     |> User.changeset(attrs)
     |> Repo.insert()
+  end
+
+  def list_users_with_ids(ids) do
+    Repo.all(from(u in User, where: u.id in ^ids))
   end
 
   def change_registration(%User{} = user, params) do

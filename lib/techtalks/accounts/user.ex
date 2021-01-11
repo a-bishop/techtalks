@@ -1,4 +1,4 @@
-defmodule TechTalks.Accounts.User do
+defmodule Techtalks.Accounts.User do
   use Ecto.Schema
   import Ecto.Changeset
 

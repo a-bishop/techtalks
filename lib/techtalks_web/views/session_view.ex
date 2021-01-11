@@ -1,3 +1,3 @@
-defmodule TechTalksWeb.SessionView do
-  use TechTalksWeb, :view
+defmodule TechtalksWeb.SessionView do
+  use TechtalksWeb, :view
 end

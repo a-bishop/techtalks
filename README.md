@@ -1,4 +1,4 @@
-# TechTalks
+# Techtalks
 
 To start your Phoenix server:
 

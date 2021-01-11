@@ -1,5 +1,5 @@
-defmodule TechTalksWeb.PageController do
-  use TechTalksWeb, :controller
+defmodule TechtalksWeb.PageController do
+  use TechtalksWeb, :controller
 
   def index(conn, _params) do
     render(conn, "index.html")

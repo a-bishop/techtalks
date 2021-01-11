@@ -1,3 +1,3 @@
-defmodule TechTalksWeb.LayoutView do
-  use TechTalksWeb, :view
+defmodule TechtalksWeb.LayoutView do
+  use TechtalksWeb, :view
 end

@@ -1,5 +1,5 @@
-defmodule TechTalksWeb.ErrorView do
-  use TechTalksWeb, :view
+defmodule TechtalksWeb.ErrorView do
+  use TechtalksWeb, :view
 
   # If you want to customize a particular status code
   # for a certain format, you may uncomment below.

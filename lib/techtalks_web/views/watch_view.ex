@@ -1,5 +1,5 @@
-defmodule TechTalksWeb.WatchView do
-  use TechTalksWeb, :view
+defmodule TechtalksWeb.WatchView do
+  use TechtalksWeb, :view
 
   def player_id(video) do
     ~r{^.*(?:youtu\.be/|\w+/|v=)(?<id>[^#&?]*)}

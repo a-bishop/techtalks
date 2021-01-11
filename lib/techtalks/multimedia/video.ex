@@ -1,15 +1,16 @@
-defmodule TechTalks.Multimedia.Video do
+defmodule Techtalks.Multimedia.Video do
   use Ecto.Schema
   import Ecto.Changeset
-  @primary_key {:id, TechTalks.Multimedia.Permalink, autogenerate: true}
+  @primary_key {:id, Techtalks.Multimedia.Permalink, autogenerate: true}
 
   schema "videos" do
     field :description, :string
     field :title, :string
     field :url, :string
     field :slug, :string
-    belongs_to :user, TechTalks.Accounts.User
-    belongs_to :category, TechTalks.Multimedia.Category
+    belongs_to :user, Techtalks.Accounts.User
+    belongs_to :category, Techtalks.Multimedia.Category
+    has_many :annotations, Techtalks.Multimedia.Annotation
 
     timestamps()
   end

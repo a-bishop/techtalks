@@ -1,6 +1,6 @@
-defmodule TechTalksWeb.WatchController do
-  use TechTalksWeb, :controller
-  alias TechTalks.Multimedia
+defmodule TechtalksWeb.WatchController do
+  use TechtalksWeb, :controller
+  alias Techtalks.Multimedia
 
   def show(conn, %{"id" => id}) do
     video = Multimedia.get_video!(id)

@@ -4,7 +4,7 @@
             <%= @video.title %>
         </h1>
         <%= content_tag :div, id: "video" , data: [id: @video.id, player_id: player_id(@video)] do %>
-            <% end %>
+        <% end %>
     </div>
     <div class="column annotations">
         <h3>Annotations</h3>
@@ -16,5 +16,13 @@
                 Post
             </button>
         </div>
+    </div>
+    <hr />
+</div>
+<div class="row">
+    <div class="column">
+        <h3>Users</h3>
+        <ul id="user-list">
+        </ul>
     </div>
 </div>

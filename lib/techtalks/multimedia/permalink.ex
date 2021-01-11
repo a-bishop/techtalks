@@ -1,4 +1,4 @@
-defmodule TechTalks.Multimedia.Permalink do
+defmodule Techtalks.Multimedia.Permalink do
   @behaviour Ecto.Type
 
   @impl true

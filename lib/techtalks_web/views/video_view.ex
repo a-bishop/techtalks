@@ -1,5 +1,5 @@
-defmodule TechTalksWeb.VideoView do
-  use TechTalksWeb, :view
+defmodule TechtalksWeb.VideoView do
+  use TechtalksWeb, :view
 
   def category_select_options(categories) do
     for category <- categories, do: {category.name, category.id}

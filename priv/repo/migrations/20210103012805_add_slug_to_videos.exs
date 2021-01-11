@@ -1,4 +1,4 @@
-defmodule TechTalks.Repo.Migrations.AddSlugToVideos do
+defmodule Techtalks.Repo.Migrations.AddSlugToVideos do
   use Ecto.Migration
 
   def change do

@@ -1,4 +1,4 @@
-defmodule TechTalksWeb.ErrorHelpers do
+defmodule TechtalksWeb.ErrorHelpers do
   @moduledoc """
   Conveniences for translating and building error messages.
   """
@@ -39,9 +39,9 @@ defmodule TechTalksWeb.ErrorHelpers do
     # should be written to the errors.po file. The :count option is
     # set by Ecto and indicates we should also apply plural rules.
     if count = opts[:count] do
-      Gettext.dngettext(TechTalksWeb.Gettext, "errors", msg, msg, count, opts)
+      Gettext.dngettext(TechtalksWeb.Gettext, "errors", msg, msg, count, opts)
     else
-      Gettext.dgettext(TechTalksWeb.Gettext, "errors", msg, opts)
+      Gettext.dgettext(TechtalksWeb.Gettext, "errors", msg, opts)
     end
   end
 end

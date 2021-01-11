@@ -1,7 +1,7 @@
 use Mix.Config
 
 # Configure your database
-config :techtalks, TechTalks.Repo,
+config :techtalks, Techtalks.Repo,
   username: "postgres",
   password: "postgres",
   database: "techtalks_dev",
@@ -15,7 +15,7 @@ config :techtalks, TechTalks.Repo,
 # The watchers configuration can be used to run external
 # watchers to your application. For example, we use it
 # with webpack to recompile .js and .css sources.
-config :techtalks, TechTalksWeb.Endpoint,
+config :techtalks, TechtalksWeb.Endpoint,
   http: [port: 4000],
   debug_errors: true,
   code_reloader: true,
@@ -55,7 +55,7 @@ config :techtalks, TechTalksWeb.Endpoint,
 # different ports.
 
 # Watch static and templates for browser reloading.
-config :techtalks, TechTalksWeb.Endpoint,
+config :techtalks, TechtalksWeb.Endpoint,
   live_reload: [
     patterns: [
       ~r"priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$",

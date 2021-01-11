@@ -1,4 +1,4 @@
-defmodule TechTalks.MixProject do
+defmodule Techtalks.MixProject do
   use Mix.Project
 
   def project do
@@ -19,8 +19,8 @@ defmodule TechTalks.MixProject do
   # Type `mix help compile.app` for more information.
   def application do
     [
-      mod: {TechTalks.Application, []},
-      extra_applications: [:logger, :runtime_tools]
+      mod: {Techtalks.Application, []},
+      extra_applications: [:logger, :runtime_tools, :iex]
     ]
   end
 

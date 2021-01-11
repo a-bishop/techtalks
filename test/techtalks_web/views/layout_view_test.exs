@@ -1,5 +1,5 @@
-defmodule TechTalksWeb.LayoutViewTest do
-  use TechTalksWeb.ConnCase, async: true
+defmodule TechtalksWeb.LayoutViewTest do
+  use TechtalksWeb.ConnCase, async: true
 
   # When testing helpers, you may want to import Phoenix.HTML and
   # use functions such as safe_to_string() to convert the helper

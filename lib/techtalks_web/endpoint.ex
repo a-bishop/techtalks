@@ -1,4 +1,4 @@
-defmodule TechTalksWeb.Endpoint do
+defmodule TechtalksWeb.Endpoint do
   use Phoenix.Endpoint, otp_app: :techtalks
 
   # The session will be stored in the cookie and signed,
@@ -10,7 +10,7 @@ defmodule TechTalksWeb.Endpoint do
     signing_salt: "v8HKCPyE"
   ]
 
-  socket "/socket", TechTalksWeb.UserSocket,
+  socket "/socket", TechtalksWeb.UserSocket,
     websocket: true,
     longpoll: false
 
@@ -50,5 +50,5 @@ defmodule TechTalksWeb.Endpoint do
   plug Plug.MethodOverride
   plug Plug.Head
   plug Plug.Session, @session_options
-  plug TechTalksWeb.Router
+  plug TechtalksWeb.Router
 end

@@ -1,12 +1,12 @@
-defmodule TechTalksWeb do
+defmodule TechtalksWeb do
   @moduledoc """
   The entrypoint for defining your web interface, such
   as controllers, views, channels and so on.
 
   This can be used in your application as:
 
-      use TechTalksWeb, :controller
-      use TechTalksWeb, :view
+      use TechtalksWeb, :controller
+      use TechtalksWeb, :view
 
   The definitions below will be executed for every view,
   controller, etc, so keep them short and clean, focused
@@ -19,12 +19,12 @@ defmodule TechTalksWeb do
 
   def controller do
     quote do
-      use Phoenix.Controller, namespace: TechTalksWeb
+      use Phoenix.Controller, namespace: TechtalksWeb
 
       import Plug.Conn
-      import TechTalksWeb.Gettext
-      import TechTalksWeb.Auth, only: [authenticate_user: 2]
-      alias TechTalksWeb.Router.Helpers, as: Routes
+      import TechtalksWeb.Gettext
+      import TechtalksWeb.Auth, only: [authenticate_user: 2]
+      alias TechtalksWeb.Router.Helpers, as: Routes
     end
   end
 
@@ -32,7 +32,7 @@ defmodule TechTalksWeb do
     quote do
       use Phoenix.View,
         root: "lib/techtalks_web/templates",
-        namespace: TechTalksWeb
+        namespace: TechtalksWeb
 
       # Import convenience functions from controllers
       import Phoenix.Controller,
@@ -49,14 +49,14 @@ defmodule TechTalksWeb do
 
       import Plug.Conn
       import Phoenix.Controller
-      import TechTalksWeb.Auth, only: [authenticate_user: 2]
+      import TechtalksWeb.Auth, only: [authenticate_user: 2]
     end
   end
 
   def channel do
     quote do
       use Phoenix.Channel
-      import TechTalksWeb.Gettext
+      import TechtalksWeb.Gettext
     end
   end
 
@@ -68,9 +68,9 @@ defmodule TechTalksWeb do
       # Import basic rendering functionality (render, render_layout, etc)
       import Phoenix.View
 
-      import TechTalksWeb.ErrorHelpers
-      import TechTalksWeb.Gettext
-      alias TechTalksWeb.Router.Helpers, as: Routes
+      import TechtalksWeb.ErrorHelpers
+      import TechtalksWeb.Gettext
+      alias TechtalksWeb.Router.Helpers, as: Routes
     end
   end
 

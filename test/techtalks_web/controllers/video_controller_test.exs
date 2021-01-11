@@ -1,7 +1,7 @@
-defmodule TechTalksWeb.VideoControllerTest do
-  use TechTalksWeb.ConnCase, async: true
-  alias TechTalks.Multimedia
-  import TechTalks.TestHelpers
+defmodule TechtalksWeb.VideoControllerTest do
+  use TechtalksWeb.ConnCase, async: true
+  alias Techtalks.Multimedia
+  import Techtalks.TestHelpers
 
   describe "with a logged-in user" do
     setup %{conn: conn, login_as: username} do

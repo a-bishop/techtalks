@@ -1,5 +1,5 @@
-defmodule TechTalks.TestHelpers do
-  alias TechTalks.{
+defmodule Techtalks.TestHelpers do
+  alias Techtalks.{
     Accounts,
     Multimedia
   }

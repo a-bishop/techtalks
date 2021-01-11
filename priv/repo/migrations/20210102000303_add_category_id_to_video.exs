@@ -1,4 +1,4 @@
-defmodule TechTalks.Repo.Migrations.AddCategoryIdToVideo do
+defmodule Techtalks.Repo.Migrations.AddCategoryIdToVideo do
   use Ecto.Migration
 
   def change do

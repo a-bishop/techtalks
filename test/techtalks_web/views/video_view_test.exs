@@ -1,16 +1,16 @@
-defmodule TechTalksWeb.VideoViewTest do
-  use TechTalksWeb.ConnCase, async: true
+defmodule TechtalksWeb.VideoViewTest do
+  use TechtalksWeb.ConnCase, async: true
   import Phoenix.View
 
   test "renders index.html", %{conn: conn} do
     videos = [
-      %TechTalks.Multimedia.Video{id: "1", title: "dogs"},
-      %TechTalks.Multimedia.Video{id: "2", title: "cats"}
+      %Techtalks.Multimedia.Video{id: "1", title: "dogs"},
+      %Techtalks.Multimedia.Video{id: "2", title: "cats"}
     ]
 
     content =
       render_to_string(
-        TechTalksWeb.VideoView,
+        TechtalksWeb.VideoView,
         "index.html",
         conn: conn,
         videos: videos
@@ -24,12 +24,12 @@ defmodule TechTalksWeb.VideoViewTest do
   end
 
   test "renders new.html", %{conn: conn} do
-    # owner = %TechTalks.Accounts.User{}
-    changeset = TechTalks.Multimedia.change_video(%TechTalks.Multimedia.Video{})
-    categories = [%TechTalks.Multimedia.Category{id: 123, name: "cats"}]
+    # owner = %Techtalks.Accounts.User{}
+    changeset = Techtalks.Multimedia.change_video(%Techtalks.Multimedia.Video{})
+    categories = [%Techtalks.Multimedia.Category{id: 123, name: "cats"}]
 
     content =
-      render_to_string(TechTalksWeb.VideoView, "new.html",
+      render_to_string(TechtalksWeb.VideoView, "new.html",
         conn: conn,
         changeset: changeset,
         categories: categories
